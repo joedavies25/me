@@ -48,11 +48,42 @@ p {
   color: var(--text-dark);
 }
 
-.fa {
-  padding: 30px 20px;
-  border-radius: 50%;
-  color: var(--text-dark);
+.icon-background {
+  position: relative;
+  padding: 28px;
   background-color: var(--primary-light);
+  border-radius: 50%;
+}
+
+.icon-background::before {
+  background: var(--text-dark);
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s;
+  transition-timing-function: cubic-bezier(0.22, 0.68, 0, 1.71);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+}
+
+.icon-background:hover::before {
+  width: 102%;
+  height: 102%;
+}
+
+.icon-background:hover > .fa {
+  color: var(--text-light);
+}
+
+.fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--text-dark);
 }
 
 .flex-col {

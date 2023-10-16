@@ -21,37 +21,54 @@
     rel="stylesheet"
   />
   <body>
-    <div class="flex-col page-container">
+  <div class="flex-col page-container">
       <div class="flex-col">
+      <div
+        class="profile-container"
+        data-tilt
+        data-tilt-full-page-listening
+        data-tilt-reverse="true"
+      >
         <div
-          class="profile-container"
-          data-tilt
-          data-tilt-full-page-listening
-          data-tilt-reverse="true"
+          class="blur-load"
+          style="
+            background-image: url('https://avatars.githubusercontent.com/u/74795974?s=48&v=4');
+          "
         >
-          <div
-            class="blur-load"
-            style="
-              background-image: url('https://avatars.githubusercontent.com/u/74795974?s=48&v=4');
-            "
-          >
-            <img
-              class="profile"
-              src="https://avatars.githubusercontent.com/joedavies25"
-              alt="Just another developer mugshot"
-              loading="lazy"
-            />
-          </div>
+          <img
+            class="profile"
+            src="https://avatars.githubusercontent.com/joedavies25"
+            alt="Just another developer mugshot"
+            loading="lazy"
+          />
         </div>
-        <div class="flex-col title-container">
-          <h1 class="text-dark">Hi, my name's Joe</h1>
-          <p class="text-dark">I'm a UK based fullstack engineer</p>
-        </div>
-        <div class="flex-row icon-container">
-          <i href="#" class="fa-brands fa-github fa-xl fa"></i>
-          <i href="#" class="fa-brands fa-linkedin-in fa-xl fa"></i>
-          <i href="#" class="fa-solid fa-envelope fa-xl fa"></i>
-        </div>
+      </div>
+      <div class="flex-col title-container">
+        <h1 class="text-dark">Hi, my name's Joe</h1>
+        <p class="text-dark">I'm a UK based fullstack engineer</p>
+      </div>
+      <div class="flex-row icon-container">
+        <a
+          href="https://github.com/joedavies25"
+          class="icon-background"
+          aria-label="Github"
+        >
+          <i class="fa-brands fa-github fa-xl fa"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/joedavies25/"
+          class="icon-background"
+          aria-label="LinkedIn"
+        >
+          <i class="fa-brands fa-linkedin fa-xl fa"></i>
+        </a>
+        <a
+          href="mailto:joedavies2500@gmail.com"
+          class="icon-background"
+          aria-label="Email"
+        >
+          <i class="fa-solid fa-envelope fa-xl fa"></i>
+        </a>
       </div>
     </div>
     <script type="text/javascript" src="vanilla-tilt.js"></script>
