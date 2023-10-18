@@ -187,3 +187,24 @@ p {
   height: 100px;
   gap: 10px;
 }
+
+#technologies-container {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 40em) {
+  .slick-carousel {
+    width: 70vw;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .slick-carousel {
+    width: 500px;
+  }
+}
+
+.tech-icon {
+  height: 50px;
+  fill: var(--text-dark);
+}

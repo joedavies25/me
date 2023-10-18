@@ -4,13 +4,14 @@ $(document).ready(function () {
     direction: "vertical",
     verticalCentered: true,
     sectionsColor: ["white", "#d9d9d9"],
+    anchors: ["", "about"],
     scrollingSpeed: 700,
     easing: "swing",
     loopBottom: false,
     loopTop: false,
     css3: true,
     navigation: {
-      textColor: "#000",
+      textColor: "#353535",
       bulletsColor: "#353535",
       position: "right",
       tooltips: ["Landing", "About"],
@@ -26,6 +27,25 @@ $(document).ready(function () {
     onLeave: function (index, nextIndex, direction) {},
     afterLoad: function (anchorLink, index) {},
     afterRender: function () {},
+  });
+
+  $(".slick-carousel").slick({
+    infinate: true,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    arrows: false,
+    slidesToShow: 6,
+    centerMode: true,
+    swipeToSlide: true,
+    speed: 300,
+    responsive: [
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+    ],
   });
 });
 
