@@ -17,6 +17,33 @@ html {
 body {
   margin: 0;
   height: 100%;
+}
+
+h1 {
+  font-family: "DM Serif Display", serif;
+  margin: 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 40em) {
+  h1 {
+    font-size: 24px;
+  }
+}
+
+p {
+  margin: 0;
+  text-align: center;
+  font-family: "Raleway";
+}
+
+@media screen and (max-width: 40em) {
+  p {
+    font-size: 12px;
+  }
+}
+
+.background-gradient {
   background-image: linear-gradient(
     135deg,
     hsl(204deg 42% 27%) 0%,
@@ -32,20 +59,16 @@ body {
   );
 }
 
-h1 {
-  font-family: "DM Serif Display", serif;
-  margin: 0;
-  text-align: center;
-}
-
-p {
-  margin: 0;
-  text-align: center;
-  font-family: "Raleway";
+.background-light {
+  background-color: var(--primary-light);
 }
 
 .text-dark {
   color: var(--text-dark);
+}
+
+.text-light {
+  color: var(--text-light);
 }
 
 .icon-background {
@@ -75,15 +98,17 @@ p {
 }
 
 .icon-background:hover > .fa {
-  color: var(--text-light);
+  fill: var(--text-light);
 }
 
 .fa {
+  height: 24px;
+  width: 24px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: var(--text-dark);
+  fill: var(--text-dark);
 }
 
 .flex-col {
@@ -139,10 +164,22 @@ p {
 
 .title-container {
   padding: 40px 80px;
-  background: #d9d9d9;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
   gap: 6px;
+}
+
+@media screen and (min-width: 40em) {
+  .title-container {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  .title-container {
+    padding: 20px 20px;
+    max-width: 75vw;
+  }
 }
 
 .icon-container {
