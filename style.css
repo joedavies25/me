@@ -178,7 +178,7 @@ p {
 @media screen and (max-width: 40em) {
   .title-container {
     padding: 20px 20px;
-    max-width: 75vw;
+    width: 75vw;
   }
 }
 
