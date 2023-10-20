@@ -3,7 +3,7 @@ $(document).ready(function () {
     menu: null,
     direction: "vertical",
     verticalCentered: true,
-    sectionsColor: ["white", "#d9d9d9"],
+    sectionsColor: ["#284b63", "#d9d9d9"],
     anchors: ["", "about"],
     scrollingSpeed: 700,
     easing: "swing",
