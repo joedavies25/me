@@ -226,6 +226,28 @@ p {
 
 #technologies-container {
   margin-top: 50px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+@media screen and (min-width: 40em) {
+  #technologies-container {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 40em) {
+  #technologies-container {
+    width: 75vw;
+  }
+}
+
+.technologies-container {
+  margin: 10px;
+  background-color: var(--primary-light);
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  padding: 20px 40px;
 }
 
 @media screen and (max-width: 40em) {
@@ -236,7 +258,7 @@ p {
 
 @media screen and (min-width: 40em) {
   .slick-carousel {
-    width: 500px;
+    max-width: 100%;
   }
 }
 
